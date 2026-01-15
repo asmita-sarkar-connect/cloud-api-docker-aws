@@ -34,7 +34,7 @@ This project demonstrates how to build, containerize, and deploy a Python Flask 
 
 \## Architecture
 
-User -> AWS EC2 -> Docker Container -> Flask API  
+User -> AWS EC2 -> Docker Container -> Flask API
 
 Docker Hub -> EC2 (image pull)
 
@@ -58,9 +58,47 @@ The container is exposed via port 5000 using security group rules and port mappi
 
 Public Endpoint:
 
-http://<EC2\_PUBLIC\_IP>:5000  
+http://<EC2\_PUBLIC\_IP>:5000
 
 http://<EC2\_PUBLIC\_IP>:5000/health
+
+## Screenshots
+
+
+
+\### Architecture
+
+!\[Architecture](screenshots/architecture-docker.png)
+
+
+
+\### Live API Output
+
+!\[API Output](screenshots/api-live.png)
+
+
+
+\### Health Check
+
+!\[Health](screenshots/health.png)
+
+
+
+\### Docker Running on EC2
+
+!\[Docker](screenshots/docker-ps.png)
+
+
+
+\### AWS Security Group
+
+!\[Security Group](screenshots/security-group.png)
+
+
+
+\### Code Snapshot
+
+!\[Code](screenshots/code.png)
 
 
 
